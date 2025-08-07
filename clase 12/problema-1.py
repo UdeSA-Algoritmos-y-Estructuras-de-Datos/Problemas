@@ -4,25 +4,8 @@ from collections import defaultdict
 # n número total de perfiles. 
 # m número total de amistades
 def count_double_profiles(n, m, friendships):
-    friendships_mapped_by_friend = {}
 
-    for a, b in friendships:
-        friendships_mapped_by_friend.setdefault(a, []).append(b)
-        friendships_mapped_by_friend.setdefault(b, []).append(a)
-        
-
-    friendship_sets_count = {}
-
-    for friends_list in friendships_mapped_by_friend.values():
-        friend_set = frozenset(friends_list)
-        friendship_sets_count[friend_set] = friendship_sets_count.get(friend_set, 0) + 1
-
-    double_profiles = 0
-    for count in friendship_sets_count.values():
-        if count > 1:
-            double_profiles += count - 1  
-
-    return double_profiles
+    pass
 
 
 class TestDoubleProfiles(unittest.TestCase):

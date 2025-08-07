@@ -4,18 +4,7 @@ def find_content_children(greed, cookies):
     greed.sort()
     cookies.sort()
    
-    childIndex = 0
-    cookiesIndex = 0
-   
-    while childIndex < len(greed) and cookiesIndex < len(cookies):
-        child = greed[childIndex]
-        cookie = cookies[cookiesIndex]
-        if(child <= cookie):
-            childIndex += 1
-        
-        cookiesIndex += 1
-  
-    return childIndex
+    pass
 
 
 

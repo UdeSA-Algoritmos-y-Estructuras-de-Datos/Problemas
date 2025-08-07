@@ -109,8 +109,7 @@ def bfs(graph: Graph, start_vertex: str) -> List[str]:
     :param start_vertex: The starting vertex
     :return: A list of vertices in the order they were visited
     """
-    visitados = []
-    return visitados
+    pass
 
 def dfs(graph: Graph, start_vertex: str) -> List[str]:
     """
@@ -119,8 +118,7 @@ def dfs(graph: Graph, start_vertex: str) -> List[str]:
     :param start_vertex: The starting vertex
     :return: A list of vertices in the order they were visited
     """
-    visitados = []
-    return visitados
+    pass
 
 # Inicializar el grafo con los vértices y aristas de la imagen 2
 graph2 = Graph()
@@ -161,8 +159,8 @@ def shortest_path_bfs(graph: Graph, start: str, end: str) -> List[str]:
     :param end: El nodo de destino
     :return: Una lista de nodos en el camino más corto o un mensaje si no existe un camino
     """
-   
-    return "No existe un camino entre los nodos especificados"
+    pass
+    
 
 
 
